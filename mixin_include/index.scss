@@ -1,0 +1,16 @@
+@mixin font_display($color: #fff, $fSize: 16px) {
+  color: $color;
+  font-size: $fSize;
+}
+
+.big_red {
+  @include font_display($color: red, $fSize: 50px);
+}
+
+.normal_blue {
+  @include font_display($color: blue, $fSize: 25px);
+}
+
+.small_green {
+  @include font_display($color: green);
+}
